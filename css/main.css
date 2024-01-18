@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url("font.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,40 @@ a {
   text-decoration: none;
 }
 
+img {
+  vertical-align: middle;
+}
+
 ul,
 li {
   list-style: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Pretendard-Regular", "sans-serif";
+  /* rem: html에 적용한 font-size 크기 기준으로 1.3배 */
+  /* 기본 폰트 사이즈를 10px 설정하면 계산하기가 쉽다. */
+  font-size: 1.3rem;
+}
+
+.inner {
+  display: block;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 320px) {
 }

@@ -41,14 +41,65 @@
     <!-- js -->
     <script src="js/html5shiv.js"></script>
     <!-- min 뜻 = 생략, 압축 -->
-    <script src="js/prefixfree.min.js"></script>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/script.js"></script>
     <title>레이아웃-인터파크</title>
   </head>
   <body>
+    <!-- 전체 레이아웃 -->
     <div class="wrap">
+      <!-- 상단 -->
       <header class="header">
-        <div class="inner"></div>
+        <div class="inner">
+          <!-- 상단 윗부분 -->
+          <div class="header-up">
+            <!-- 상단 왼쪽 -->
+            <div class="header-left">
+              <a href="#" alt="인터파크" class="logo"></a>
+              <form action="#" class="search">
+                <input
+                  type="text"
+                  class="search-text"
+                  maxlength="100"
+                  placeholder="검색어를 입력해주세요."
+                />
+                <input type="reset" class="search-reset" />
+                <input type="button" class="search-bt" />
+              </form>
+            </div>
+            <!-- 상단 오른쪽 -->
+            <div class="header-right">
+              <ul class="member-list">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li class="maypage-bt">
+                  <a href="#">마이페이지<i class="icon-arrow"></i></a>
+                </li>
+                <div class="mypage">
+                  <ul class="mypage-list">
+                    <li>
+                      <a href="#"><b>투어</b>마이페이지</a>
+                    </li>
+                    <li>
+                      <a href="#"><b>티켓</b>마이페이지</a>
+                    </li>
+                    <li>
+                      <a href="#"><b>쇼핑</b>마이페이지</a>
+                    </li>
+                    <li>
+                      <a href="#"><b></b>마이페이지</a>
+                    </li>
+                  </ul>
+                  <a href="#" class="mb-mypage">
+                    <img src="images/icon_mypage.svg" alt="마이페이지" />
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <!-- 상단 아랫부분 -->
+          <div class="header-down"></div>
+        </div>
       </header>
     </div>
   </body>
