@@ -13,6 +13,7 @@
 }
 a {
   text-decoration: none;
+  color: #121212;
 }
 img {
   vertical-align: middle;
@@ -543,4 +544,210 @@ body {
   color: #ef3e43;
   border: 1px solid rgba(239, 62, 67, 0.3);
   border-radius: 3px;
+}
+
+/* 인터파크 라이브 */
+.live .section-top {
+  margin-bottom: 25px;
+}
+
+.section-slide {
+  height: 455px;
+  background-color: antiquewhite;
+}
+
+.sw-live {
+  height: 100%;
+}
+
+.live-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.live-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.live-img img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.live-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.live-info-cate {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 32px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 0 12px;
+  border-radius: 16px;
+}
+
+.live-info-title {
+  display: -webkit-box;
+  font-size: 20px;
+  line-height: 24px;
+  /* 2줄 말줄임 출력 */
+  height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  font-weight: 700;
+  color: #fff;
+}
+
+.live-info-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.live-info-date {
+  color: #fff;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 5px;
+}
+
+.live-info-time {
+  color: #fff;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.live-info-bottom {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.live-info-thumb {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.live-info-thumb img {
+  /* width: 100%; */
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.live-info-desc {
+  width: calc(100% - 65px);
+}
+
+.live-info-desc-title {
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  /* 1줄 말줄임 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+.live-info-desc-price {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 5px;
+}
+.live-info-desc-price em {
+  color: #ef3e43;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+.live-info-desc-price b {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+/* 오늘의 도서 books */
+.sw-books {
+  height: 100%;
+}
+
+.books .section-slide {
+  height: 455px;
+  /* background-color: antiquewhite; */
+  margin-bottom: 20px;
+}
+
+.books-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.books-img {
+  position: relative;
+  width: 100%;
+  height: 355px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.books-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.books-info {
+  text-align: center;
+}
+
+.books-info-title {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.books-info-price {
+  font-size: 18px;
+  font-weight: 700;
 }
